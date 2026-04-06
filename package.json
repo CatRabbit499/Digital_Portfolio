@@ -1,0 +1,16 @@
+{
+  "name": "digital_portfolio",
+  "version": "1.0.0",
+  "description": "Digital Portfolio created for CS250 at Delaware County Community College",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Nathan Meyer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
