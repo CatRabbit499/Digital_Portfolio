@@ -14,17 +14,17 @@ https://templatemo.com/tm-600-prism-flux
         const portfolioData = [
             {
                 id: 1,
-                title: 'Neural Network',
-                description: 'Advanced AI system with deep learning capabilities for predictive analytics and pattern recognition.',
-                image: 'images/neural-network.jpg',
-                tech: ['TensorFlow', 'Python', 'CUDA']
+                title: 'Digital Portfolio CS240',
+                description: 'Digital Portfolio project for CS240 showcasing coursework for the class at DCCC',
+                image: 'images/portfolio-CS240.png',
+                tech: ['UI/UX', 'CS240', 'Web Development']
             },
             {
                 id: 2,
-                title: 'Quantum Cloud',
-                description: 'Next-generation cloud infrastructure leveraging quantum computing for unprecedented processing power.',
-                image: 'images/quantum-cloud.jpg',
-                tech: ['AWS', 'Kubernetes', 'Docker']
+                title: 'Pacific Trails Resort',
+                description: 'Case study project for IMM120 showcasing a website for a resort in the Pacific Northwest',
+                image: 'images/pacific-new.png',
+                tech: ['UI/UX', 'IMM120', 'Web Development']
             },
             {
                 id: 3,
@@ -46,37 +46,23 @@ https://templatemo.com/tm-600-prism-flux
                 description: 'Big data processing platform capable of analyzing petabytes of information in real-time.',
                 image: 'images/data-nexus.jpg',
                 tech: ['Apache Spark', 'Hadoop', 'Kafka']
-            },
-            {
-                id: 6,
-                title: 'AR Interface',
-                description: 'Augmented reality system for immersive data visualization and interactive experiences.',
-                image: 'images/ar-interface.jpg',
-                tech: ['Unity', 'ARCore', 'Computer Vision']
-            },
-            {
-                id: 7,
-                title: 'IoT Matrix',
-                description: 'Intelligent IoT ecosystem connecting millions of devices with edge computing capabilities.',
-                image: 'images/iot-matrix.jpg',
-                tech: ['MQTT', 'Edge AI', '5G']
             }
         ];
 
         // Skills data
         const skillsData = [
-            { name: 'React.js', icon: '⚛️', level: 95, category: 'frontend' },
-            { name: 'Node.js', icon: '🟢', level: 90, category: 'backend' },
+            { name: 'React.js',   icon: '⚛️', level: 95, category: 'frontend' },
+            { name: 'Node.js',    icon: '🟢', level: 90, category: 'backend'  },
             { name: 'TypeScript', icon: '📘', level: 88, category: 'frontend' },
-            { name: 'AWS', icon: '☁️', level: 92, category: 'cloud' },
-            { name: 'Docker', icon: '🐳', level: 85, category: 'cloud' },
-            { name: 'Python', icon: '🐍', level: 93, category: 'backend' },
-            { name: 'Kubernetes', icon: '☸️', level: 82, category: 'cloud' },
-            { name: 'GraphQL', icon: '◈', level: 87, category: 'backend' },
+            { name: 'AWS',        icon: '☁️', level: 92, category: 'cloud'    },
+            { name: 'Docker',     icon: '🐳', level: 85, category: 'cloud'    },
+            { name: 'Python',     icon: '🐍', level: 93, category: 'backend'  },
+            { name: 'Kubernetes', icon: '☸️', level: 82, category: 'cloud'    },
+            { name: 'GraphQL',    icon: ' ◈', level: 87, category: 'backend'  },
             { name: 'TensorFlow', icon: '🤖', level: 78, category: 'emerging' },
             { name: 'Blockchain', icon: '🔗', level: 75, category: 'emerging' },
-            { name: 'Vue.js', icon: '💚', level: 85, category: 'frontend' },
-            { name: 'MongoDB', icon: '🍃', level: 90, category: 'backend' }
+            { name: 'Vue.js',     icon: '💚', level: 85, category: 'frontend' },
+            { name: 'MongoDB',    icon: '🍃', level: 90, category: 'backend'  }
         ];
 
         // Scroll to section function

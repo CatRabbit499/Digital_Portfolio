@@ -685,10 +685,21 @@ body::after {
 .philosophy-subheading {
 	font-size: 20px;
 	color: var(--text-secondary);
-	max-width: 700px;
+	max-width: 1000px;
 	margin: 0 auto 80px;
+	text-align: justify;
 	line-height: 1.6;
 	font-weight: 300;
+}
+
+.philosophy-subtitle {
+	display: block;
+	font-size: 28px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	color: var(--text-primary);
 }
 
 .philosophy-pillars {
