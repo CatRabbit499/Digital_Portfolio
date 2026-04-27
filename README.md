@@ -1,2 +1,5 @@
 # CS250 Portfolio
-Digital Portfolio for __CS250__ at Delaware County Community College
+
+Digital Portfolio for **CS250** at Delaware County Community College
+
+Unless otherwise noted, all third party code is cited in (Legal Attribution)[legal.txt]
