@@ -1,0 +1,33 @@
+/* 
+  Name: Nathan Meyer
+  Date: 11/21/2025
+  File: Styles12 
+*/
+
+header {
+  padding: 3em;
+}
+
+:root {
+  --navbar-bounds-adjustment: .5em;
+}
+
+.navbar {
+  margin-inline: var(--navbar-bounds-adjustment);
+}
+
+.navbar-toggler {
+  z-index: 100;
+}
+
+.nav-item {
+  margin-inline: calc(-1 * var(--navbar-bounds-adjustment));
+  padding-inline: var(--navbar-bounds-adjustment);
+  z-index: 0;
+}
+
+.nav-item:hover,
+.bg-light-blue {
+  background-color: #CCE6FF;
+  z-index: 0;
+}

@@ -1,0 +1,79 @@
+/*
+	Author: Nathan Meyer
+	Date: 10/26/2025
+	File Name: Styles08
+*/
+
+/* Style for body specifies a background color */
+body {
+	background: linear-gradient(to top right, #fff 0%, #6699ff 100%) no-repeat fixed center;
+	font-family: Geneva, Arial, sans-serif;
+}
+
+/* Style for the h1 element */
+h1 {
+	text-indent: 1ch;
+}
+
+/* Style for the container element */
+#container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* Style rules for form elements */
+label {
+	display: block;
+	padding-top: 3%;
+}
+
+fieldset,
+input {
+	margin-bottom: 2%;
+}
+
+legend {
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+.btn {
+	display: block;
+	background-color: #003399;
+	color: #fff;
+	font-size: 1.25em;
+	border-radius: 10px;
+	border: none;
+	margin: 0 auto;
+	padding: 5%;
+}
+
+.btn:hover {
+	filter: saturate(70%);
+
+}
+
+/* Style for the footer element */
+footer {
+	font-size: .9em;
+	text-align: center;
+}
+
+/* Media query for tablet layout */
+@media only screen and (min-width: 600px) {
+	form {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: auto auto;
+		gap: 20px;
+	}
+
+	.btn {
+		grid-column: 1 / span 2;
+		padding: 3%;
+	}
+}

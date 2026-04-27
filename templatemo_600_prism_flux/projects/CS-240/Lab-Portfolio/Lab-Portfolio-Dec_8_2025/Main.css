@@ -1,0 +1,203 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    h1 {
+        color: white;
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+}
+
+
+/* Main content styles */
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+    .container {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        padding: 3rem;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+        animation: fadeInUp 0.8s ease-out;
+    }
+
+    .hello-world {
+        font-size: 3rem;
+        color: #667EEA;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 2rem;
+        font-weight: 300;
+    }
+}
+
+/* Features section styles */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+    .feature {
+        background: #F8F9FA;
+        padding: 1.5rem;
+        border-radius: 10px;
+        border-left: 4px solid #667EEA;
+
+        ul {
+            list-style-type: ">";
+
+            span:hover {
+                display: block;
+                background: linear-gradient(to right,
+                        transparent,
+                        #667EEA40 25%,
+                        #667EEA40 75%,
+                        transparent);
+
+                ;
+
+                li {
+                    min-width: 5cap;
+
+                    &::marker {
+                        transition: linear 5s;
+                    }
+
+                    &:hover {
+                        transition-property: justify-self;
+                        transition-duration: 3s;
+                        justify-self: anchor-center;
+
+                        list-style-type: ">";
+                        /* list-style-position: inside; */
+                    }
+                }
+            }
+
+        }
+
+        h3 {
+            color: #667EEA;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+/* Footer styles */
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    p {
+        color: white;
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+}
+
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hello-world {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        margin: 1rem;
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hello-world {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    .container {
+        animation: none;
+    }
+}
+
+/* Focus styles for accessibility */
+*:focus {
+    outline: 2px solid #667EEA;
+    outline-offset: 2px;
+}

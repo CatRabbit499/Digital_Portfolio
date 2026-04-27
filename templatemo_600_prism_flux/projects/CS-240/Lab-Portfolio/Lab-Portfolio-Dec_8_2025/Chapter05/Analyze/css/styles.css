@@ -1,0 +1,136 @@
+/*
+    Student Name: Nathan Meyer
+	File Name: Styles05
+	Current Date: 10/3/2025
+*/
+
+/* CSS reset */
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h3,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body and images */
+body {
+    background-color: #375f1b;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for mobile */
+
+/* Hide the examples section on mobile devices */
+@media only screen and (max-width: 768px) {
+    .tablet-desktop {
+        display: none;
+    }
+}
+
+/* Style rules for header content */
+header {
+    h1 {
+        text-align: center;
+        color: #fff;
+        font-family: 'Playfair Display', serif;
+        padding: 5%;
+        font-size: 3em;
+    }
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #ebf7e3;
+    border-bottom: 1px solid #375f1b;
+
+    ul {
+        text-align: center;
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            font-size: 1em;
+            font-family: Geneva, Arial, sans-serif;
+            font-weight: bold;
+            padding: 3%;
+
+            a {
+                display: block;
+                color: #1b3409;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #ebf7e3;
+    font-family: 'PT Sans', sans-serif;
+
+    p,
+    pre {
+        font-size: 1.25em;
+
+    }
+
+    pre {
+        width: min-content;
+        margin-inline-start: -8pc;
+    }
+
+    .btn {
+        background-color: #375F1B;
+        padding: 2%;
+        margin: 2% auto;
+        width: 80%;
+        text-align: center;
+        border-radius: 5px;
+        /* filter: none; */
+
+        &:hover {
+            filter: saturate(50%);
+        }
+
+        a {
+            color: #ebf7e3;
+            text-decoration: none;
+            font-size: 1.25em;
+            display: block;
+
+            &:hover {
+
+                text-decoration: underline;
+                text-decoration-style: solid;
+                text-decoration-color: #ebf7e3;
+                text-decoration-thickness: from-font;
+                text-decoration-skip-ink: none;
+                text-underline-offset: 3px
+            }
+        }
+    }
+
+    .corner {
+        border-radius: 12px;
+    }
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    color: #fff;
+    padding: 1% 0;
+}

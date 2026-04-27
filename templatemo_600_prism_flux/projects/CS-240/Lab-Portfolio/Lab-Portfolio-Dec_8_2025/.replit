@@ -1,0 +1,30 @@
+hidden = [".config"]
+
+entrypoint = "index.html"
+modules = ["web"]
+
+[nix]
+channel = "stable-24_11"
+packages = ["static-web-server"]
+
+[deployment]
+publicDir = "/"
+deploymentTarget = "static"
+
+[workflows]
+runButton = "Serve static"
+
+[[workflows.workflow]]
+name = "Serve static"
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "echo -e $(cat .config/motd.txt) && static-web-server -w .config/sws.toml"
+
+[agent]
+expertMode = true
+
+[[ports]]
+localPort = 80
+externalPort = 80

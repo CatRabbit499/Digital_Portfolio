@@ -1,0 +1,83 @@
+/*
+  Student Name: Nathan Meyer
+	File Name: Analyze11
+	Current Date: 11/16/2025
+*/
+
+/* CSS reset */
+body,
+header,
+main,
+footer,
+figure,
+h1,
+h2 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Style rule for body and images */
+body {
+	background-color: #000033;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	text-align: center;
+}
+
+/* Style rule for the container */
+#container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* Style rule for header content */
+header {
+	padding: 2% 0;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	/* font-family: sans-serif; */
+	word-spacing: -0.5ch;
+}
+
+h1 {
+	color: #fff;
+}
+
+/* Style rule for the main area */
+main {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1em;
+	margin-top: 0.5em;
+	padding: 2%;
+	border-radius: 1em;
+	background-color: #E6E6FF;
+	border: inset 0.2em #7A6D68;
+}
+
+/* Style rule for the footer area */
+footer {
+	font-size: .90em;
+	text-align: center;
+	margin-top: 2em;
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0 0.5em;
+
+	p {
+		flex: 0 0 100%;
+		margin: 0 0 0.5em;
+	}
+
+	a {
+		display: contents;
+	}
+}

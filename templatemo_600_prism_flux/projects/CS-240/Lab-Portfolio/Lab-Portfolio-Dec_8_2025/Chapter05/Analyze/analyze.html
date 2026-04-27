@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- 
+	Student Name: Nathan Meyer
+	File Name: Analyze05
+	Current Date: 10/3/2025
+ -->
+<html lang="en">
+
+<head>
+    <title>Style Sheets</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2
+        ?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700
+        &family=Playfair+Display:ital,wght@0,400..900;1,400..900
+        &display=swap">
+</head>
+
+<body>
+
+    <header>
+        <h1>User Agent Style Sheets</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chrome</a></li>
+            <li><a href="#">Firefox</a></li>
+        </ul>
+    </nav>
+
+    <!-- Use the main element to add main content to the webpage -->
+    <main>
+
+        <div id="info">
+
+            <p>
+                Every modern browser uses a default style sheet to display webpages.
+                No browser uses the exact same style sheet, so style rules vary by browser.
+                These style sheets are known as user agent style sheets.
+                Select from the following options to view user agent style sheets.</p>
+
+            <p class="btn">
+                <a href="https://chromium.googlesource.com/chromium/blink/+/master/Source/core/css/html.css"
+                    target="_blank">Chrome</a>
+            </p>
+
+            <p class="btn">
+                <a href="https://dxr.mozilla.org/mozilla-central/source/layout/style/res/html.css"
+                    target="_blank">Firefox</a>
+            </p>
+
+            <p class="btn">
+                <a href="https://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css" target="_blank">Safari</a>
+            </p>
+
+            <img class="corner" src="images/devtools.jpg" alt="Google Chrome DevTools">
+
+        </div>
+
+        <div id="examples" class="tablet-desktop">
+
+            <h2>Style rules from Chrome</h2>
+            <pre>
+                body {
+                    display: block;
+                    margin: 8px
+                }
+            </pre>
+
+            <pre>
+                body:-webkit-full-page-media {
+                    background-color: rgb(0, 0, 0)
+                }
+            </pre>
+
+            <pre>
+                p {
+                    display: block;
+                    -webkit-margin-before: 1__qem;
+                    -webkit-margin-after: 1__qem;
+                    -webkit-margin-start: 0;
+                    -webkit-margin-end: 0;
+                }
+            </pre>
+
+            <pre>
+                div {
+                    display: block
+                }
+            </pre>
+
+            <pre>
+                layer {
+                    display: block
+                }
+            </pre>
+
+            <pre>
+                article, aside, footer, header, hgroup, main, nav, section {
+                    display: block
+                }
+            </pre>
+
+
+            <pre>
+                marquee {
+                    display: inline-block;
+                }
+            </pre>
+
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2021. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

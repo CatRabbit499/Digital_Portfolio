@@ -1,0 +1,37 @@
+WEBVTT
+
+NOTE
+Captions for Responsive Web Design Video
+Student Name: Nathan Meyer
+File Name: captions.vtt
+Date: 11/2/201
+
+1 - Cue Header 1
+00:00.000 --> 00:04.500
+Responsive web design provides an 
+optimum viewing experience for Desktop,
+
+2 - Cue Header 2
+00:04.700 --> 00:05.700
+Tablet,
+
+3 - Cue Header 3
+00:06.500 --> 00:08.000
+and Mobile devices
+
+4 - Cue Header 4
+00:09.000 --> 00:12.500
+Begin by creating a Wireframe for each viewport
+
+5 - Cue Header 5
+00:13.000 --> 00:16.500
+Larger viewports allow for multiple columns of content
+
+6 - Cue Header 6
+00:19.500 --> 00:23.000
+Use a single column layout for mobile viewports
+
+7 - Cue Header 7
+00:24.000 --> 00:28.500
+When the wireframes are complete you 
+can begin the webpage development

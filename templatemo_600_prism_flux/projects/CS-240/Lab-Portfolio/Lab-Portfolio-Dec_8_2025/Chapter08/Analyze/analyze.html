@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Nathan Meyer, 10/26/202 -->
+<html lang="en">
+
+<head>
+  <title>Form Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles08.css">
+</head>
+
+<body>
+
+  <div id="container">
+
+    <!-- Use the main area to add the main content of the webpage -->
+    <main>
+
+      <h1>Payment Form</h1>
+      <form class="grid" method="post" action="https://www.example.com">
+        <fieldset name="Personal Info">
+          <legend> Personal Info </legend>
+          <label for="fName"> First Name </label>
+          <input type="text" name="fName" id="fName">
+          <br>
+          <label for="lName"> Last Name </label>
+          <input type="text" name="lName" id="lName">
+          <br>
+          <label for="email"> Email </label>
+          <input type="email" name="email" id="email">
+          <br>
+          <label for="phone"> Phone </label>
+          <input type="tel" name="phone" id="phone">
+          <br>
+        </fieldset>
+        <fieldset name="Billing Info">
+          <legend> Billing Info </legend>
+          <label for="cName"> Card Name </label>
+          <input type="text" name="cName" id="cName">
+          <br>
+          <label for="cNum"> Card Number </label>
+          <input type="number" name="cNum" id="cNum">
+          <br>
+          <label for="expDate"> Expiration Date </label>
+          <input type="text" name="expDate" id="expDate" placeholder="MM/YY">
+          <br>
+          <label for="ccv"> CCV </label>
+          <input type="number" name="ccv" id="ccv">
+          <br>
+        </fieldset>
+        <input type="submit" value="Submit" class="btn">
+      </form>
+
+    </main>
+
+    <!-- Use the footer area to add webpage footer content -->
+    <footer>
+      <p>Nathan Meyer, 10/26/2025</p>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
