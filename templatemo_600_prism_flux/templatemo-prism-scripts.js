@@ -28,10 +28,10 @@ https://templatemo.com/tm-600-prism-flux
             },
             {
                 id: 3,
-                title: 'Blockchain Vault',
+                title: 'PNG Unzip',
                 description: 'Secure decentralized storage solution using advanced encryption and distributed ledger technology.',
-                image: 'images/blockchain-vault.jpg',
-                tech: ['Ethereum', 'Solidity', 'Web3']
+                image: 'images/png-unzip.png',
+                tech: ['PowerShell', 'ZLIB', 'PNG']
             },
             {
                 id: 4,
@@ -51,18 +51,18 @@ https://templatemo.com/tm-600-prism-flux
 
         // Skills data
         const skillsData = [
-            { name: 'React.js',   icon: '⚛️', level: 95, category: 'frontend' },
-            { name: 'Node.js',    icon: '🟢', level: 90, category: 'backend'  },
-            { name: 'TypeScript', icon: '📘', level: 88, category: 'frontend' },
-            { name: 'AWS',        icon: '☁️', level: 92, category: 'cloud'    },
-            { name: 'Docker',     icon: '🐳', level: 85, category: 'cloud'    },
-            { name: 'Python',     icon: '🐍', level: 93, category: 'backend'  },
-            { name: 'Kubernetes', icon: '☸️', level: 82, category: 'cloud'    },
-            { name: 'GraphQL',    icon: ' ◈', level: 87, category: 'backend'  },
-            { name: 'TensorFlow', icon: '🤖', level: 78, category: 'emerging' },
-            { name: 'Blockchain', icon: '🔗', level: 75, category: 'emerging' },
-            { name: 'Vue.js',     icon: '💚', level: 85, category: 'frontend' },
-            { name: 'MongoDB',    icon: '🍃', level: 90, category: 'backend'  }
+            { name: 'Java',       icon: '☕', level: 90, category: 'programming' },
+            { name: 'Ruby',       icon: '💎', level: 90, category: 'programming' },
+            { name: 'JavaScript', icon: '📜', level: 90, category: ['programming','backend']     },
+            { name: 'TypeScript', icon: '📘', level: 88, category: ['programming','frontend']    },
+            { name: 'React.js',   icon: '⚛️', level: 95, category: 'frontend'    },
+            { name: 'Node.js',    icon: '🟢', level: 90, category: 'backend'     },
+            { name: 'IT',         icon: '💻', level: 90, category: ['software','hardware']    },
+            { name: 'AWS',        icon: '☁️', level: 92, category: 'cloud'       },
+            { name: 'Azure',      icon: '☁️', level: 92, category: 'cloud'       },
+            { name: 'Python',     icon: '🐍', level: 93, category: 'programming' },
+            { name: 'Unix/Linux', icon: '🐧', level: 93, category: 'software'    },
+            { name: 'MongoDB',    icon: '🍃', level: 90, category: 'backend'     }
         ];
 
         // Scroll to section function
@@ -262,7 +262,7 @@ https://templatemo.com/tm-600-prism-flux
                 
                 const filteredSkills = category === 'all' 
                     ? skillsData 
-                    : skillsData.filter(skill => skill.category === category);
+                    : skillsData.filter(skill => skill.category === category || (Array.isArray(skill.category) && skill.category.includes(category)));
                 
                 filteredSkills.forEach((skill, index) => {
                     const hexagon = document.createElement('div');

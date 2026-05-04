@@ -704,6 +704,7 @@ body::after {
 
 .philosophy-pillars {
 	display: grid;
+	text-align: center;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 50px;
 	margin-bottom: 60px;
